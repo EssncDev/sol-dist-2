@@ -1,13 +1,12 @@
 :root {
-    --background-color: #dddddd;
-    --background-color-fade: #dbdbdb;
+    --background-color: #2A1933;
     --box-color-light: #002442;
     --box-color-dark: #012642;
-    --highlight-color-light: #f91504;
-    --highlight-color-dark: #d00000;
-    --highlight-border: #ff1b02;
-    --font-color: #333333;
+    --highlight-color-light: #C86DFC;
+    --font-color: #ededed;
     --font-color-light: #79797980;
-    --border-color: #85858556;
-    --background-black: #17181a;
+    --border-color: #B97ADD;
+    --border-color-btn: #757575;
+    --background-black: #A780BD;
+    --button-color: #B97ADD;
 }

@@ -13,6 +13,134 @@
     background-color: var(--background-color);
 }
 
+#homeContent button {
+    background-color: var(--button-color);
+
+    border: 0.05svw solid var(--border-color-btn);
+    border-radius: 0.25svw;
+
+    cursor: pointer;
+
+    padding: 0.25svw;
+}
+
+#homeContent button:hover {
+    background-color: #2A1933;
+    color: var(--font-color);
+
+    border: 0.05svw solid var(--border-color-btn);
+    border-radius: 0.25svw;
+}
+
+#token-box {
+    padding: 2.5svw;
+}
+
+.tokenData-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 2svh;
+
+    color: var(--font-color);
+}
+
+.tokenData-box div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    gap: 2svh;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2.5svh;
+
+    color: var(--font-color);
+
+    padding-bottom: 15svh;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 1.5svw;
+
+    width: auto;
+    min-width: 35svw;
+    height: auto;
+    min-height: 7.5svh;
+
+    background: var(--background-color-black);
+
+    border: 0.1svw solid var(--border-color);
+    border-radius: 1svw;
+
+    padding: 1.25svw;
+}
+
+.form-row span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 1.25svh;
+
+    height: auto;
+    min-height: 6.5svh;
+
+    font-size: smaller;
+
+    width: auto;
+    min-width: 10svw;
+}
+
+.form-row span input{
+    width: 15svw;
+}
+
+.form-row span input::placeholder{
+    padding-left: 0.5svw;
+}
+
+
+.form-row div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: smaller;
+
+    width: auto;
+    min-width: 10svw;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 2.5svw;
+
+    width: 20svw;
+    height: auto;
+    min-height: 5svh;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     

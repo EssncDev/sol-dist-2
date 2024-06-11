@@ -1,14 +1,19 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require('cors');
-const { TrxClient } = require('./trxClient.js');
 const { Buffer } = require('buffer');
 const BufferLayout = require('buffer-layout');
+const { Connection } = require('@solana/web3.js');
+const { TrxClient } = require("./trxClient");
+
 
 const app = express ();
 app.use(bodyParser.urlencoded({ extended: false }), cors());
 
 const PORT = 3099;
+
+const connection = new Connection('https://mainnet.helius-rpc.com/?api-key=388777d1-d2d7-4689-aa8f-1914a3e0c159');
+const trxClient = new TrxClient();
 
 app.listen(PORT, () => {
     console.log("Express server Listening on PORT:", PORT);
@@ -40,4 +45,27 @@ app.post('/createBuffer', (request, response) => {
     response.json({
         data: data,
     });
+});
+
+app.post('/getTokenInfo', (request, response) => {
+    const body = request.body;
+    const tokenAddress = body.tokenAddress;
+    const walletAddress = body.walletAddress;
+
+    trxClient.getAssociatedTokenInfo(connection, walletAddress, tokenAddress)
+    .then(
+        (result) => {
+            if (!result) {
+                response.json({
+                    data: false,
+                });
+            } else {
+                response.json({
+                    data: result,
+                });
+            }
+            return;
+        }
+    )
+
 });

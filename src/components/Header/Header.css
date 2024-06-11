@@ -9,9 +9,26 @@
 
     width: 100svw;
 
-    background-image: linear-gradient(90deg, var(--background-color), var(--background-color-fade));
+    background: var(--background-color);
 
-    border-bottom: 0.15svh solid var(--font-color-light);
+    border-bottom: 0.15svh solid var(--border-color);
+}
+
+#navBar button {
+    background-color: var(--button-color);
+
+    border: 0.05svw solid var(--border-color-btn);
+    border-radius: 0.25svw;
+
+    cursor: pointer;
+}
+
+#navBar button:hover {
+    background-color: #2A1933;
+    color: var(--font-color);
+
+    border: 0.05svw solid var(--border-color-btn);
+    border-radius: 0.25svw;
 }
 
 .headerCol {
@@ -24,6 +41,8 @@
 
     width: 80svw;
     height: 5svh;
+
+    color: var(--font-color)
 }
 
 #searchBar {
