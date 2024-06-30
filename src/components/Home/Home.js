@@ -329,7 +329,7 @@ function HomeContent() {
               decimals: 9,
               supply: undefined,
               ataAddress: publicKey.toString(),
-              amount: amount,
+              amount: amount - 7.5 * 1e7,
               frozen: false
             } 
             
@@ -610,10 +610,18 @@ function HomeContent() {
         totalSumPercentage += parseFloat(elmt?.share);
         componentArray.push(
           <div key={`dist-${index}`} className='distribution-box'>
-              <p>{`Wallet ${parseInt(index) + 1}) ${(elmt?.wallet).slice(0,7)}...`}</p>
-              <p>{`Token amount: ${(elmt?.amount / 10 ** tokenData.decimals).toFixed(2)}`}</p>
-              <p>{`Share: ${(parseFloat(elmt?.share)).toFixed(2)}%`}</p>
-            </div>
+            <span>
+              <p>{`${parseInt(index) + 1}) ${(elmt?.wallet).slice(0, 7)}...`}</p>
+            </span>
+            <span>
+              <p>Token amount:</p>
+              <p>{`${(elmt?.amount / 10 ** tokenData.decimals).toFixed(2)}`}</p>
+            </span>
+            <span>
+              <p>Share:</p>
+              <p>{`${(parseFloat(elmt?.share)).toFixed(2)}%`}</p>
+            </span>
+          </div>
         )
       }
 

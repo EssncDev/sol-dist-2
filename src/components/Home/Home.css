@@ -265,9 +265,9 @@
 .distribution-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 2svw;
+    gap: 8svw;
 
     width: auto;
     min-width: 50svw;
@@ -277,6 +277,22 @@
 
     border: 0.05svw solid var(--border-color);
     border-radius: 0.5svw;
+}
+
+.distribution-box span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: auto;
+    min-width: 3.5svw;
+
+    height: auto;
+    
+    font-size: small;
+    color: var(--font-color);
+
 }
 
 /* Extra small devices (phones, 600px and down) */

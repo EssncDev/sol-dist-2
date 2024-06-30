@@ -70,7 +70,7 @@ class TrxClient {
             SystemProgram.transfer({
                 fromPubkey: new PublicKey(payer),
                 toPubkey: new PublicKey(receiver),
-                lamports: transferAmountInLamports,
+                lamports: Math.floor(transferAmountInLamports),
             })
 
         return JSON.stringify(createInstructions);
