@@ -1,5 +1,6 @@
 :root {
     --background-color: #2A1933;
+    --background-light: #a780bd6c;
     --box-color-light: #002442;
     --box-color-dark: #012642;
     --highlight-color-light: #C86DFC;
@@ -7,6 +8,9 @@
     --font-color-light: #79797980;
     --border-color: #B97ADD;
     --border-color-btn: #757575;
-    --background-black: #A780BD;
     --button-color: #B97ADD;
+}
+
+html {
+    background-color: var(--background-color);
 }

@@ -14,12 +14,16 @@
 }
 
 #homeContent button {
+
+    font-size: small;
+
     background-color: var(--button-color);
 
     border: 0.05svw solid var(--border-color-btn);
     border-radius: 0.25svw;
 
     cursor: pointer;
+
 
     padding: 0.25svw;
 }
@@ -38,13 +42,20 @@
 
 .tokenData-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
-    gap: 2svh;
+    gap: 1svh;
 
     color: var(--font-color);
+    background-color: var(--background-light);
+
+    border: 0.1svw solid var(--font-color);
+    border-radius: 2svw;
+
+    padding-top: 1.5svw;
+    padding-bottom: 1.5svw;
 }
 
 .tokenData-box div{
@@ -53,7 +64,26 @@
     justify-content: space-around;
     align-items: center;
     
-    gap: 2svh;
+    gap: 2.5svh;
+
+    width: auto;
+    min-width: 15svw;
+    height: auto;
+    min-height: 5svh;
+}
+
+.slider-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-sidenote {
+
+    font-size: x-small;
+    text-align: center;
+    width: 20svw;
 }
 
 .form-box {
@@ -66,7 +96,7 @@
 
     color: var(--font-color);
 
-    padding-bottom: 15svh;
+    padding-bottom: 5svh;
 }
 
 .form-row {
@@ -130,15 +160,123 @@
 
 .btn-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
     gap: 2.5svw;
 
-    width: 20svw;
+    width: 30svw;
     height: auto;
     min-height: 5svh;
+}
+
+.btn-box span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 30svw;
+    height: auto;
+    min-height: 5svh;
+}
+
+.btn-box button{
+    width: 10svw;
+    height: auto;
+    min-height: 5svh;
+}
+
+.file-input-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 10svw;
+    height: auto;
+    min-height: 5svh;
+
+    font-size: small;
+    font-family: arial;
+
+    color: black;
+    background-color: var(--button-color);
+
+    border: 0.05svw solid var(--border-color-btn);
+    border-radius: 0.25svw;
+
+    cursor: pointer;
+}
+
+.file-input-label:hover {
+    background-color: #2A1933;
+    color: var(--font-color);
+
+    border: 0.05svw solid var(--border-color-btn);
+    border-radius: 0.25svw;
+}
+
+#tokenSum {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5svh;
+
+    padding-bottom: 15svh;
+}
+
+.tokenSum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    min-width: 25svw;
+    height: auto;
+    min-height: 10svh;
+
+    color: var(--font-color);
+    background-color: var(--background-color);
+
+    border: 0.1svw solid var(--font-color);
+    border-radius: 2svw;
+}
+
+#distribution-calc-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5svh;
+
+    width: auto;
+    min-width: 50svw;
+    height: auto;
+    min-height: 20svh;
+}
+
+#distribution-calc-box button {
+    margin-top: 2.5svh;
+}
+
+.distribution-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2svw;
+
+    width: auto;
+    min-width: 50svw;
+    
+    font-size: small;
+    color: var(--font-color);
+
+    border: 0.05svw solid var(--border-color);
+    border-radius: 0.5svw;
 }
 
 /* Extra small devices (phones, 600px and down) */

@@ -21,7 +21,7 @@ function BuildLogoAndSearchBar() {
   return(
     <div className="headerCol">
       <div id="searchBar">
-        <input type="text" id="searchBarInput" placeholder="Insert the SPL Token Address here..."></input>
+        <input type="text" id="searchBarInput" placeholder="Insert SPL Token Address here..."></input>
       </div>
       <div>
         <p>{(walletBalance) ? `Balance: ${(walletBalance / 10 ** 9).toFixed(4)} SOL` : undefined}</p>
