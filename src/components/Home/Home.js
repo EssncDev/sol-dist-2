@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './Home.css';
 import Header from '../Header/Header.js';
 import { useWallet, useConnection } from '@solana/wallet-adapter-react';
-import { Transaction, TransactionInstruction, SystemProgram, PublicKey, Connection } from '@solana/web3.js';
+import { Transaction, PublicKey } from '@solana/web3.js';
 import toast, { Toaster } from 'react-hot-toast';
 
 const notifyWaiting = () => toast.loading('Waiting...',{
@@ -692,8 +692,6 @@ function HomeContent() {
       renderBox
     );
   }
-
-  
 
   return (
     <div id="homeContent">
